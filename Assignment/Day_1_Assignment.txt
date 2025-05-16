@@ -1,0 +1,145 @@
+1.
+
+Procedural Programming: 
+
+       Involves writing procedures or functions that perform operations on data. It follows a top-down approach.
+
+Example:
+
+def add(a, b):
+    return a + b
+
+def main():
+    x = 10
+    y = 20
+    print("Sum is:", add(x, y))
+
+main()
+
+
+Object-Oriented Programming (OOP): 
+
+       Organizes code using classes and objects. It supports principles like inheritance, encapsulation, and polymorphism.
+
+Example:
+
+class Calculator:
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
+
+    def add(self):
+        return self.a + self.b
+
+calc = Calculator(10, 20)
+print("Sum is:", calc.add())
+
+Functional Programming: 
+
+       Treats computation as the evaluation of mathematical functions. It avoids changing state and mutable data.
+
+Example:
+
+numbers = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, numbers))
+print("Squared numbers:", squared)
+
+
+Python supports procedural, object-oriented, and functional programming. You can write simple scripts procedurally, define classes and objects for OOP, and use higher-order functions, lambda expressions, and map/filter for functional programming.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.
+
+Virtual Environment in Python
+
+
+A virtual environment is an isolated Python environment that allows you to manage dependencies specific to a project, without affecting the global Python setup.
+
+we use virtual environments in Python To isolate project dependencies, prevent version conflicts, and maintain clean project environments.
+
+Using the command: python -m venv env_name
+
+Virtual environment:
+
+
+What is a Virtual Environment in Python?
+
+A virtual environment is like a separate box or workspace just for your Python project. Inside this box, you can install whatever Python libraries your project needs — without messing up or being affected by other projects or your main system Python.
+
+Example:
+
+If we working on two Python projects.
+
+One needs Django 4.0, and the other needs Django 4.1.
+
+If both use the same system Python, one version will overwrite the other, causing errors.
+
+To avoid this, we use virtual environments:
+
+Project A gets its own box with Django 4.0.
+
+Project B gets a different box with Django 4.1.
+
+No conflicts. Each project works fine on its own.
+
+
+So, Every time when you start a new Python project, it's a good habit to create a virtual environment.
+
+We can create a Venv by using the command: python -m venv env_name
+
+To activate: env_name\Scripts\activate
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.
+
+Web Application: A software application that runs in a web browser using front-end and back-end technologies (e.g., Flask, Django, React). For example Gmail, Instagram, Amazon, Flipkart etc.
+
+Designed for end users to perform tasks online via a browser (e.g., Gmail, YouTube).
+📌 Focus: User interaction, simplicity, public access.
+
+Enterprise Application: Large-scale applications used in business environments for operations such as HR, finance, and customer service; often includes web components but is broader and more complex. For example Hospital management system.
+
+Built to support complex business operations across departments in a company (e.g., SAP, Salesforce).
+📌 Focus: Workflow automation, integration, data management, internal use.
+
+A web application runs in a browser and serves general users. An enterprise application is designed for large organizations, integrates with various systems, and supports complex workflows and scalability.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.
+
+String Handling in Python
+
+Python offers powerful string handling through built-in functions and methods like slicing, formatting, searching, and regular expressions.
+
+Common operations include slicing (s[1:4]), concatenation (s1 + s2), formatting (f"Hello {name}"), and using string methods like lower(), upper(), replace(), split(), and join().
+
+translate():
+
+input = "hello world!"
+translation = str.maketrans("h", "H")
+result = input.translate(translation)
+print(result)
+
+Output: Hello world!
+
+encode():
+
+input = "hello world!"
+encoded= input.encode("utf-8")
+print(encoded)  
+
+Output: b'hello world!'
+
+decode():
+
+decoded = encoded.decode("utf-8")
+print(decoded) 
+
+Output: hello world!
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
